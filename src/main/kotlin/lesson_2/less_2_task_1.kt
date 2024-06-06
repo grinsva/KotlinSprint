@@ -16,9 +16,11 @@ fun main() {
     val num3: UShort = 3u
     val num4: UShort = 5u
 
-    val srBall: Float = (num1 + num2 + num3 + num4).toFloat()/4
+    val srBall = (num1 + num2 + num3 + num4).toFloat()/4
 
-    println(srBall)
+    val srBallStr = String.format("%.2f",srBall)
+
+    println(srBallStr)
 
 
 }
