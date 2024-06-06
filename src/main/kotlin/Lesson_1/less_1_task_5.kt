@@ -1,5 +1,11 @@
 package lesson_1
 
+const val secInHour = 3600
+const val secInMin = 60
+const val minInHour = 60
+
+
+
 fun main() {
 /*
 Объяви переменную с количеством секунд, которые Гагарин провел в космосе.
@@ -11,23 +17,17 @@ fun main() {
 - Значения часов, минут и секунд отображать двумя цифрами.
  */
 
-    val seconds: UShort = 8488u
+    val seconds: Int = 8487
 
-    val hour: UByte = (seconds/3600u).toUByte()
-    val minutes: UInt = seconds/60u - hour*60u
-    val sec: UInt = seconds - hour * 3600u - minutes * 60u
+    val hour: Int = seconds / secInHour
+    val minutes: Int = seconds / secInMin - hour * minInHour
+    val sec: Int = seconds - hour * secInHour - minutes * secInMin
 
-    val hourString: String = when {
-        (hour < 10u) ->  "0$hour"
-        else ->  "$hour"}
+    val hourString = String.format("%02d", hour)
 
-    val minutesString: String = when {
-        (minutes < 10u) ->  "0$minutes"
-        else ->  "$minutes"}
+    val minutesString = String.format("%02d", minutes)
 
-    val secString: String = when {
-        (sec < 10u) ->  "0$sec"
-        else ->  "$sec"}
+    val secString = String.format("%02d", sec)
 
     println(hourString + ":" + minutesString + ":" + secString)
 
