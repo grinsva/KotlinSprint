@@ -12,6 +12,4 @@ fun main() {
     val sredniBallStr = String.format("%.2f", sredniBall)
 
     println(sredniBallStr)
-
-
 }
