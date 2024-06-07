@@ -3,29 +3,18 @@ package lesson_2
 import kotlin.math.pow
 
 fun main() {
-/*
-Задача 5* к Уроку 2
-Напиши программу-калькулятор для банковского приложения (такой функционал бывает на промо экранах).
-Используя формулу сложных процентов (ее можно загуглить), нужно посчитать размер вклада через 20 лет
-с такими условиями:
-
- – Клиент ввел в приложении сумму 70_000 рублей (считать ее известной заранее и проинициализировать переменную);
- – Процентная ставка 16,7% (проценты начисляются в конце года);
- – Подсчитать размер вклада через 20 лет;
- – Результат должен быть дробным числом с 3 знаками после запятой;
- – Ответ должен получиться таким 1536438.428.
- */
 
     val amountBase: Double = 70000.0
-    val procent: Double  = 16.7
+    val procent: Double = 16.7
     val period = 20
 
-    val amountCalculated = amountBase * (1 + procent / 100) .pow(period)
+    val amountCalculated = amountBase * (1 + procent / 100).pow(period)
 
     val amountCalculatedStr = String.format("%.3f", amountCalculated)
 
-
-    println("Размер вклада через $period лет\n" +
-            "составит:    $amountCalculatedStr рублей \n")
+    println(
+        "Размер вклада через $period лет\n" +
+                "составит:    $amountCalculatedStr рублей \n"
+    )
 
 }
