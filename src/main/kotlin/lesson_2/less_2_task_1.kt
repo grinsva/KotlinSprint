@@ -1,26 +1,17 @@
 package lesson_2
 
 fun main() {
-/*
-Задача на среднее арифметическое. В классе с углубленным изучением
-английского языка учится 4 человека. У них следующие баллы по профильному предмету 3, 4, 3, 5.
-Пишем часть школьного софта, который посчитает средний балл по английскому для этого класса.
 
- – Написать выражение, которое высчитывает средний балл;
- – Распечатать результат в консоль;
- – В консоли должно быть выведено дробное число с 2 знаками после запятой.
- */
+    val ballStdent1: UShort = 3u
+    val ballStdent2: UShort = 4u
+    val ballStdent3: UShort = 3u
+    val ballStdent4: UShort = 5u
 
-    val num1: UShort = 3u
-    val num2: UShort = 4u
-    val num3: UShort = 3u
-    val num4: UShort = 5u
+    val sredniBall = (ballStdent1 + ballStdent2 + ballStdent3 + ballStdent4).toFloat() / 4
 
-    val srBall = (num1 + num2 + num3 + num4).toFloat()/4
+    val sredniBallStr = String.format("%.2f", sredniBall)
 
-    val srBallStr = String.format("%.2f",srBall)
-
-    println(srBallStr)
+    println(sredniBallStr)
 
 
 }
