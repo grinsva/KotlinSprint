@@ -13,18 +13,17 @@ fun main() {
     val departTotalMin = departMinite + departHour * MIN_IN_HOUR
 
     //Сколько минут от 00:00 прибытие
-    val arriveTotalMinInt = departTotalMin + rideTimeMinTotal
+    val arriveTotalMin = departTotalMin + rideTimeMinTotal
 
-    val arriveHourInt = when {
-        (arriveTotalMinInt / MIN_IN_HOUR < HOUR_IN_DAY) -> arriveTotalMinInt / MIN_IN_HOUR
-        else -> (arriveTotalMinInt / MIN_IN_HOUR - HOUR_IN_DAY)
+    val arriveHour = when {
+        (arriveTotalMin / MIN_IN_HOUR < HOUR_IN_DAY) -> arriveTotalMin / MIN_IN_HOUR
+        else -> (arriveTotalMin / MIN_IN_HOUR - HOUR_IN_DAY)
     }
 
-    val arriveMinInt = arriveTotalMinInt % MIN_IN_HOUR
+    val arriveMin = arriveTotalMin % MIN_IN_HOUR
 
-    val arriveHourStr = String.format("%02d", arriveHourInt)
-    val arriveMinStr = String.format("%02d", arriveMinInt)
 
-    println("Поезд прибывает в $arriveHourStr:$arriveMinStr")
+    println("Поезд прибывает в " + ("%02d:%02d".format(arriveHour, arriveMin)))
+
 
 }
