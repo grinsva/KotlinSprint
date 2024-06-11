@@ -2,12 +2,12 @@ package lesson_3
 
 fun main() {
 
-    val userAge = 21
+    var userAge = 21
 
     val userName = "Татьяна"
     val userFatherName = "Сергеевна"
 
-    val userSurName = when {
+    var userSurName = when {
         (userAge < 22) -> "Андреева"
         else -> "Сидорова"
     }
@@ -17,9 +17,29 @@ fun main() {
                 "Фамилия: $userSurName \n" +
                 "Имя: $userName \n" +
                 "Отчество: $userFatherName \n" +
-                "Возраст: $userAge"
+                "Возраст: $userAge \n"
 
     )
+
+    userAge = 22
+
+    userSurName = when {
+        (userAge < 22) -> "Андреева"
+        else -> "Сидорова"
+    }
+
+    println(
+        "Персональные данные: \n" +
+                "Фамилия: $userSurName \n" +
+                "Имя: $userName \n" +
+                "Отчество: $userFatherName \n" +
+                "Возраст: $userAge \n"
+
+    )
+
+
+
+
 
 
 }
