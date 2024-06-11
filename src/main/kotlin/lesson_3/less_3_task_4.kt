@@ -17,6 +17,4 @@ fun main() {
     stepInfo = "[$stepStart-$stepEnd; ${stepNumber}]"
 
     println(stepInfo)
-
-
 }
