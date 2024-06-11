@@ -2,18 +2,14 @@ package lesson_3
 
 fun main() {
 
-    val stepInfo = "D2-D4; 0"
+    val stepInfo = "D2-D4; 10"
 
-    val stepStart = stepInfo.take(2)
-    val stepEnd = stepInfo.take(5).takeLast(2) //
-    val stepNumber = stepInfo.drop(7).toInt()
+    val stepInfoList = stepInfo.split("-","; ")
 
-    println(
-        """
-Откуда: $stepStart
-Куда: $stepEnd
-Номер хода: $stepNumber"""
+    println("""
+        Откуда: ${stepInfoList[0]}
+        Куда: ${stepInfoList[1]}
+        Номер хода: ${stepInfoList[2]}
+        """.trimIndent()
     )
-
-
 }
