@@ -17,6 +17,4 @@ fun main() {
                 "кристаллическая руда - $kristRudaBonus \n" +
                 "железная руда -  $ferrRudaBonus\n"
     )
-
-
 }
