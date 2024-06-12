@@ -16,4 +16,5 @@ fun main() {
 
     println("Посадка состоялась:")
     print("в " + hour + ":" + minute + "\n")
+
 }
