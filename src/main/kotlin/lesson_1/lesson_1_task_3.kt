@@ -1,6 +1,5 @@
 package lesson_1
 
-
 fun main() {
 
     val year: String = "1961"
