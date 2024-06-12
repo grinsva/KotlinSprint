@@ -14,5 +14,4 @@ fun main() {
     var orderCount: UInt = 75u
     val gratitudeMessage: String = "Спасибо за покупку!"
 
-
 }
