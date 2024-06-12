@@ -29,7 +29,6 @@ fun main() {
     val missionIsPossible = (!hasDamage
             && (crewCount in CREW_COUNT_MIN..CREW_COUNT_GOOD)
             && boxOfProvisions > PROVISION_MIN
-            && weatherConditionsGood
             )  or
             (crewCount == CREW_COUNT_GOOD
             && boxOfProvisions >= PROVISION_MIN
