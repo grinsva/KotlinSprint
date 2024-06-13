@@ -17,10 +17,13 @@ fun main() {
         println("Введите ваш пароль:")
         userPassword = readln().toString()
     }
-    if (userPassword != PASSWORD_Z) println("Пароль недействителен!")
-    else println(
-        "Ваши данные проверены, и о, чудо, они верны... \n" +
-                "Пользователь '$LOGIN_Z', \n" +
-                "вам разрешено входить на борт корабля 'Heart of Gold'"
-    )
+
+    if (userPassword != PASSWORD_Z)
+        println("Пароль недействителен!")
+    else
+        println(
+            "Ваши данные проверены, и о, чудо, они верны... \n" +
+                    "Пользователь '$LOGIN_Z', \n" +
+                    "вам разрешено входить на борт корабля 'Heart of Gold'"
+        )
 }
