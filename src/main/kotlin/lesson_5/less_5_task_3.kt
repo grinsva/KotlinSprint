@@ -2,6 +2,7 @@ package lesson_5
 
 const val RANDOM_MAX = 5
 const val RANDOM_MIN = 0
+
 fun main() {
 
     val numberOne = (RANDOM_MIN..RANDOM_MAX).random()
@@ -31,7 +32,10 @@ fun main() {
             false
         }
 
-    if (resultOne && resultTwo) println("Поздравляем! Вы выиграли главный приз!")
-    else if (resultOne || resultTwo) println("Вы выиграли утешительный приз!")
-    else println("Пускай сегодня не повезло. Но игра продолжается!")
+    if (resultOne && resultTwo)
+        println("Поздравляем! Вы выиграли главный приз!")
+    else if (resultOne || resultTwo)
+        println("Вы выиграли утешительный приз!")
+    else
+        println("Пускай сегодня не повезло. Но игра продолжается!")
 }
