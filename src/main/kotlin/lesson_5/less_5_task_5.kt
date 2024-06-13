@@ -5,7 +5,7 @@ const val RANDOM_MIN = 0
 
 fun main() {
 
-    val numberList = listOf(
+    val numberList = setOf(
         (RANDOM_MIN..RANDOM_MAX).random(),
         (RANDOM_MIN..RANDOM_MAX).random(),
         (RANDOM_MIN..RANDOM_MAX).random()
